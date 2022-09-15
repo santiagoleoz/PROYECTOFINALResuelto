@@ -1,0 +1,144 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: $color-principal;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;   
+
+    ul{
+        list-style: none;
+        
+    }
+
+    h1{
+        font-size: 6vw;
+        color: rgb(242, 240, 247);  
+        text-align: center; 
+        margin-top: 2vw;
+        @include screen_880{
+            color:yellow; 
+        }
+    }
+
+    nav{
+        text-align: center; 
+        margin-top: 4vw;
+        margin-bottom: 2vw;
+    
+    }
+
+    .direcciones{   
+        color: azure !important; 
+        text-decoration: none;
+        font-size: 2vw;
+        display: flex;       
+    }
+
+    .Buscador{
+        width: 50%;
+        margin-right: 25vw;
+        margin-left: 25vw;
+        
+   
+        input{
+        width: 100%;
+        font-size: 2vw;
+        margin-bottom: 2vw;
+        margin-top: 2vw;
+        }
+    
+    } 
+} 
+
+main{
+    .TITULO{ 
+        display: flex;
+        justify-content: center;
+        margin-bottom: 6vw;
+        color: rgb(44, 50, 2);
+    }
+    .cardcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2vw;
+            
+        } 
+
+        h3{
+            position:absolute;
+            font-size: 3vw;
+            background-color: rgb(255, 255, 255, 0.8);
+            border-radius: 2vw;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            @include screen_725{
+                font-size: 5vw;
+            }
+            @include screen_670{
+                font-size: 6vw;
+            }
+        }
+       
+        img{
+            width: 25vw;
+            border-radius: 3vw; 
+            border: 2px solid black;
+            min-height: 40vw;
+            max-height: 40vw;
+            min-width: 30vw;
+            max-width: 30vw;
+            @include screen_670{
+                min-height: 50vw;
+                max-height: 50vw;
+                min-width: 40vw;
+                max-width: 40vw;
+            }
+        } 
+
+    }
+
+} 
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vw;
+
+    div{ 
+        margin-top: 2vw; 
+        display: flex;
+        justify-content: center;
+    
+       a{
+        text-decoration: none;
+        color: rgb(134, 154, 8);
+        font-size: 1.5vw;
+        margin-right: 1vw;
+        margin-left: 1vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+
+       p{ 
+        margin-top: 2vw; 
+        display: flex;
+        justify-content: center;
+        }
+    
+    }
+
+}
+

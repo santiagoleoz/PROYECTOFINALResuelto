@@ -1,0 +1,188 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: $color-principal;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;   
+
+    ul{
+        list-style: none;
+        
+    }
+
+    h1{
+        font-size: 6vw;
+        color: rgb(242, 240, 247);  
+        text-align: center; 
+        margin-top: 2vw;
+        @include screen_880{
+            color:yellow; 
+        }
+    }
+
+    nav{
+        text-align: center; 
+        margin-top: 4vw;
+        margin-bottom: 2vw;
+    
+    }
+
+    .direcciones{   
+        color: azure !important; 
+        text-decoration: none;
+        font-size: 2vw;
+        display: flex;       
+    }
+
+    .Buscador{
+        width: 50%;
+        margin-right: 25vw;
+        margin-left: 25vw;
+        
+   
+        input{
+        width: 100%;
+        font-size: 2vw;
+        margin-bottom: 2vw;
+        margin-top: 2vw;
+        }
+    
+    } 
+} 
+
+main{
+    .reservabotones{ 
+        display: flex;    
+        flex-direction: column;
+        align-items: center;
+        font-size: 2vw;
+        font-style: oblique;
+
+    
+        .cajasreserva{
+            input{ 
+                background-color: rgb(250, 234, 106);
+                color: rgb(6, 6, 5);
+                border-style: solid;
+                margin-top: 1vw;
+                height: 3vw;
+                width: 13vw ;
+                font-size: 1vw;
+                font-style: oblique;
+                @include screen_725{
+                    font-size: 2vw;
+                    width: 30vw;
+                }
+                } 
+
+                label{
+                    font-size: 2vw;
+                    margin-bottom: 1vw;
+                    @include screen_725{
+                        font-size: 5vw;
+                        margin-bottom: 1vw;
+                        margin-top: 1vw;
+                        font-size: 3vw;
+                    }
+                    
+                }
+
+                select{ 
+                    background-color: rgb(250, 234, 106);
+                    color: rgb(6, 6, 5);
+                    border-style: solid;
+                    margin-top: 1vw;
+                    height: 3vw;
+                    width: 13vw ;
+                    font-size: 1vw;
+                    font-style: oblique;
+
+                }
+                textarea{ 
+                    background-color: rgb(246, 235, 153);
+                    color: rgb(11, 11, 8);
+                    margin-top: 4vw;
+                    font-size: 2vw;
+                } 
+                @include screen_725{
+                    margin-top: 2vw;
+                }
+
+
+        }
+    } 
+}
+
+.enviarborrar{
+    input{
+        height: 3vw;
+        background-color: rgb(3, 3, 13);
+        color: rgb(239, 243, 9);
+        border-style: solid;
+        margin-right: 2vw;
+        font-style: oblique; 
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        margin-top: 2vw; 
+        @include screen_485{
+            height: 5vw;
+        }  
+    }
+} 
+
+
+.enviarborrar{
+    input:hover{
+        background-color: rgb(66, 62, 62);
+        transition: .5s;
+        transform: scale(1.1);
+        color: rgb(235, 224, 74);
+        box-shadow: 0 8px 16px 0 rgba(224, 193, 16, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    } 
+} 
+    
+
+    
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vw;
+
+    div{ 
+        margin-top: 2vw; 
+        display: flex;
+        justify-content: center;
+    
+       a{
+        text-decoration: none;
+        color: rgb(134, 154, 8);
+        font-size: 1.5vw;
+        margin-right: 1vw;
+        margin-left: 1vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+
+       p{ 
+        margin-top: 2vw; 
+        display: flex;
+        justify-content: center;
+        }
+    
+    }
+
+}
+
+
+
+
+

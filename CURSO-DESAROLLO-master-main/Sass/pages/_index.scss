@@ -1,0 +1,423 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: $color-principal;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;   
+
+    ul{
+        list-style: none;
+        
+    }
+
+    h1{
+        font-size: 6vw;
+        color: rgb(242, 240, 247);  
+        text-align: center; 
+        margin-top: 2vw;
+        @include screen_880{
+            color:yellow; 
+        }
+    }
+
+    nav{
+        text-align: center; 
+        margin-top: 4vw;
+        margin-bottom: 2vw;
+    
+    }
+
+    .direcciones{   
+        color: azure !important; 
+        text-decoration: none;
+        font-size: 2vw;
+        display: flex;       
+    }
+
+    .Buscador{
+        width: 50%;
+        margin-right: 25vw;
+        margin-left: 25vw;
+        
+   
+        input{
+        width: 100%;
+        font-size: 2vw;
+        margin-bottom: 2vw;
+        margin-top: 2vw;
+        @include screen_430{
+        font-size: 5vw;
+        }
+        
+        }
+
+    
+    } 
+} 
+
+
+
+main{    
+    background-color:aliceblue;
+    padding-bottom: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    table{
+        font-size: 1.5vw;
+        color: rgb(3, 3, 50);
+        width: 50%;
+        border: 1px solid rgb(1, 0, 0);
+        margin:auto;
+        margin-top: 5vw;
+        background-color: rgb(227, 233, 233);
+
+        @include screen_800{
+            font-size: 2vw;
+        }
+        @include screen_725{
+            font-size: 2vw;
+        }
+        @include screen_485{
+            font-size: 3vw;
+        }
+        @include screen_400{
+            font-size: 3vw;
+        }
+
+
+
+        thead{
+            
+            tr{
+                
+                td{
+                    border-spacing: 0;
+                    border: 1px solid black;
+                    text-align: center;  
+                    @include screen_800{
+                        padding:0.5vw 5vw;
+                    }
+                    @include screen_725{
+                        padding:0.5vw 5vw;
+                    }
+                    @include screen_485{
+                        padding: 0.5vw 5vw;
+                    }
+             
+                }
+                th{
+                    border-spacing: 0;
+                    border: 1px solid black;
+                    text-align: center;
+                    @include screen_800{
+                        padding:0.5vw 5vw;
+                    }
+                    @include screen_725{
+                        padding:0.5vw 5vw;
+                    }
+                    @include screen_485{
+                        padding: 0.5vw 5vw;
+                    }
+                   
+                }
+            }
+        }
+    }
+
+    .calendario{ 
+        display: flex;
+        justify-content: center;
+            @include screen_725{
+                width: 400px;
+                height: 450px;
+
+            }
+            }
+            @include screen_555{
+                height: 50px;
+                width: 30px;
+                margin-left: 1vw;
+                margin-right: 5vw;
+                margin-bottom: 3vw;
+            }
+            @include screen_485{
+                margin-left: 45vw;
+                margin-top: 10vw;
+                margin-bottom: 130vw;
+                height: 40px;
+                width: 20px;
+            }
+
+
+    }
+    
+    .precios{
+        font-size: 3vw;
+        font-style: inherit;
+        display: flex;
+        justify-content: center;
+        margin-top: 9vw;
+        margin-bottom: 1vw;
+        color: rgb(186, 171, 11);
+        @include screen_880{
+            font-size: 3vw; 
+        }
+        @include screen_800{
+            font-size: 3vw; 
+        }
+        @include screen_670{
+            font-size: 3.5vw; 
+        }
+        @include screen_617{
+            font-size: 3vw; 
+        }
+        @include screen_485{
+            font-size: 4vw;
+        }
+
+
+
+    }
+
+    .consulta{
+        display: flex;
+        justify-content: center;
+        color: antiquewhite;
+    } 
+
+
+    section{
+        article{ display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: rgb(134, 154, 8);
+        font-size: 2vw;
+        margin-bottom: 4vw;
+        font-style: oblique;
+            p{
+                font-style: oblique;   
+                @include screen_725{
+                font-size: 3vw;
+                }
+                @include screen_670{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                color: rgb(134, 154, 8);
+                font-size: 3vw;
+                margin-bottom: 4vw;
+                font-style: oblique;
+                }
+                @include screen_485{
+                    font-size: 3vw;
+                }
+
+            }
+        }
+
+    }
+    .VariosDestinos{
+        display: flex;
+        justify-content: center;
+        font-size: 1.3vw;
+        color: rgb(134, 154, 8);
+        margin-top: 8vw;
+        font-style: oblique; 
+        margin-bottom: 2vw;  
+        @include screen_800{
+            font-size: 2.3vw;
+            margin-bottom: 10vw;
+            margin-top: 10vw;
+        }
+        @include screen_725{
+            font-size: 2.5vw;
+            margin-top: 20vw;
+            margin-bottom: 3vw;
+        }
+        @include screen_670{
+            font-size: 3.5vw;
+            margin-top: 25vw;
+            margin-bottom: 3vw;
+
+        }
+
+
+
+    }
+
+    .FotoDestinos{
+        display: flex;
+        justify-content: center;
+        color: rgb(186, 171, 11);
+
+        img{
+            width: 60vw;
+            @include screen_725{
+                margin-top: 5vw;
+                width: 70vw;
+                height: 40vw;
+            }
+            @include screen_725{
+                margin-top: 5vw;
+                width: 70vw;
+                height: 40vw;
+            }
+            @include screen_430{
+                height: 300px;
+                width: 400px;
+                margin-top: 10vw;
+                margin-right: 3vw;
+            }
+        } 
+    }           
+    .VolarPocos{
+        font-size: 4vw;
+        font-style: oblique;
+        color: rgb(186, 171, 11);
+        margin-top: 5vw;
+        display: flex;
+        justify-content: center;
+        @include screen_670{
+            font-size: 2.8vw;
+            margin-top: 5vw;
+        }
+        @include screen_600{
+            font-size: 7vw;
+            margin-bottom: 10vw;
+            margin-top: 50vw;
+            display: flex;
+            align-items: center;
+        }
+        @include screen_485{
+            font-size: 6vw;
+            margin-top: 5vw;
+            margin-bottom: 5vw;
+        }
+
+    }
+
+    .ofertas{
+        display: flex;
+        justify-content: center;
+        color: rgb(186, 171, 11);
+        font-size: 3vw;
+        font-style: oblique;
+        margin-top: 6vw;
+        margin-bottom: 3vw; 
+        @include screen_725{
+            display: flex;
+            justify-content: center;
+            color: rgb(186, 171, 11);
+            font-size: 5vw;
+            font-style: oblique;
+            margin-top: 6vw;
+            margin-bottom: 3vw; 
+        }
+        
+    } 
+
+    #carouselExampleIndicators{
+        max-width: 50vw;
+        min-width: 50vw;
+
+        .foto-especial{
+            max-height: 50vw;
+            min-height: 50vw;
+            
+        }
+      
+    }
+
+    .consulta{
+        display: flex;
+        justify-content: center;
+        color: antiquewhite;
+    } 
+
+    .inputss{
+        display: flex;
+        justify-content: center;
+      
+        input{
+            display: flex;
+            justify-content: center;
+            height: 3vw;
+            background-color: rgb(0, 0, 12);
+            color: rgb(239, 243, 9);
+            border-style: solid;
+            margin-right: 1vw;
+            font-style: oblique;  
+            padding-left: 1.5vw;
+            padding-right: 1.5vw;
+            margin-top: 2vw;
+            margin-right: 3vw;
+            margin-left: 3vw;
+            @include screen_485{
+                height: 5vw;
+            }  
+
+        } 
+
+
+
+        input:hover { 
+            background-color: rgb(66, 62, 62);
+            transition: .5s;
+            transform: scale(1.1);
+            color: rgb(235, 224, 74);
+        
+        }
+    
+    } 
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vw;
+
+    div{ 
+        margin-top: 2vw; 
+        display: flex;
+        justify-content: center;
+    
+       a{
+        text-decoration: none;
+        color: rgb(134, 154, 8);
+        font-size: 1.5vw;
+        margin-right: 1vw;
+        margin-left: 1vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include screen_725{
+            font-size: 2,5vw;
+        }
+
+
+       }
+
+       p{ 
+        margin-top: 2vw; 
+        display: flex;
+        justify-content: center;
+        }
+
+
+
+
+    
+    }
+
+
+
+
+}
